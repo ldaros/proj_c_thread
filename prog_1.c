@@ -1,7 +1,10 @@
-#include <stdio.h>
-
 // prog_1.c
+//
 // Gere um processo pai e filho e exibam os respectivos PIDs.
+
+#include <stdio.h>
+#include <unistd.h>
+
 int main(int argc, char const *argv[]) {
   // fork é uma chamada de sistema que cria um processo filho.
   int pid = fork();
